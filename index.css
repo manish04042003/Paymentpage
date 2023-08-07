@@ -283,7 +283,6 @@ main footer {
     top: 100px;
     right: 0;
     height: 0;
-    box-shadow: 6px 11px 24px 0 rgba(23, 31, 37, 0.12);
     border-radius: 10px;
   }
   .paymentmodal.show-div {
@@ -293,6 +292,8 @@ main footer {
   .modalcontent {
     width: 100%;
     background-color: white;
+    box-shadow: 6px 11px 24px 0 rgba(23, 31, 37, 0.12);
+
   }
 
   main footer {
