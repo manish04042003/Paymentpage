@@ -1,0 +1,255 @@
+@font-face {
+  font-family: regular;
+  src: url(/fonts/AvertaStd-Regular.ttf);
+}
+
+@font-face {
+  font-family: bold;
+  src: url(/fonts/AvertaStd-Bold.ttf);
+}
+
+@font-face {
+  font-family: semibold;
+  src: url(/fonts/AvertaStd-Semibold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "regular";
+}
+
+body {
+  background-color: lavender;
+}
+
+main {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  /* bottom: 0; */
+  padding-bottom: 0;
+  background: #fff;
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+  min-height: calc(100vh - 80px);
+}
+main > * {
+  color: #0d2366;
+}
+#header-details {
+  text-align: center;
+  position: relative;
+  transform: translateY(-50%);
+}
+#header-details .img {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+  border: 5px solid white;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.maintitle {
+  padding: 1rem;
+}
+#header-details .text {
+  position: absolute;
+  width: 100%;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+.mainContentdiv {
+  margin-top: 25px;
+}
+
+.title-underline {
+  display: block;
+  width: 48px;
+  border-bottom: 5px solid;
+  margin-top: 20px;
+  border-color: rgb(35, 113, 236);
+}
+.mainContent {
+  margin-top: 20px;
+  padding: 1rem;
+
+  padding-bottom: 30px;
+}
+
+main footer {
+  padding: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  background: #f5f6f7;
+}
+.logodiv {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: row;
+  color: black;
+  margin-left: -4px;
+  margin-bottom: 15px;
+}
+.logodiv img {
+  height: 40px;
+  width: 40px;
+  margin-right: 3px;
+}
+
+#nextBtn {
+  box-sizing: border-box;
+  position: fixed;
+  padding: 16px;
+  width: 92%;
+  bottom: 36px;
+  left: 4%;
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-color: rgb(35, 113, 236);
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+/* modal css */
+.paymentmodal {
+  position: fixed;
+  background-color: white;
+  z-index: 10;
+  width: 100%;
+  transition: bottom 0.5s, height 0.5s;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  height: 0;
+}
+
+.paymentmodal.show-div {
+  bottom: 0; /* Move div to the bottom */
+  height: 100vh; /* Expand to full viewport height */
+}
+
+.modalcontent {
+  padding: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inputfild {
+  width: 100%;
+  margin: 1.7rem 0;
+}
+.inputfild .label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #515978d4;
+  word-break: break-word;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.inputfild input {
+  line-height: 16px;
+  height: 40px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 2px;
+  overflow: hidden;
+  font-size: 14px;
+  padding: 0 9px;
+  outline: none;
+  color: inherit;
+  box-sizing: border-box;
+}
+.priceinput {
+  line-height: 16px;
+  height: 40px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 2px;
+  overflow: hidden;
+  font-size: 14px;
+  padding: 0 9px;
+  outline: none;
+  color: inherit;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #0d2366;
+}
+.payBtn {
+  box-sizing: border-box;
+  padding: 16px;
+  width: 100%;
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-color: rgb(35, 113, 236);
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+}
+@media only screen and (min-width: 767px) {
+    .onlymobile{
+        display: none;
+    }
+  main {
+    background-color: white;
+    position: absolute;
+    width: 70%;
+    top: 0;
+    /* bottom: 0; */
+    padding-bottom: 0;
+    background: #fff;
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+    min-height: calc(100vh - 80px);
+  }
+  .mainchilddiv{
+    max-width: 500px;
+  }
+
+  #header-details {
+    text-align: left;
+    position: relative;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #header-details .img {
+    margin: 0;
+  }
+  #header-details .text {
+    position: static;
+    width: 100%;
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+
+
+
+
+
+}
+
+/* faltu ki css{ */
+.ql-editor img {
+  width: 100%;
+}
+.ql-editor h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #0d2366;
+}
+.ql-editor p {
+  color: #0d2366;
+}
